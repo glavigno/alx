@@ -52,7 +52,7 @@ void main() {
     );
 
     blocTest<CharactersBloc, CharactersBlocState>(
-      'emits LoadedState when LoadNextPage event is added',
+      'emits [LoadedState] when LoadNextPage event is added',
       build: () {
         charactersBloc.characters.addAll(characters.sublist(0, 2));
         when(mockRepository.getData(2)).thenAnswer((_) async => characters.sublist(2, 4));
