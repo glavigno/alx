@@ -7,18 +7,15 @@ part of 'character.dart';
 // **************************************************************************
 
 Character _$CharacterFromJson(Map<String, dynamic> json) => Character(
-      id: json['id'] as int,
-      name: json['name'] as String,
-      image: json['image'] as String,
-      gender: json['gender'] as String,
-      hairColor: json['hairColor'] as String,
-      relatives: (json['relatives'] as List<dynamic>)
-          .map((e) => Relative.fromJson(e as Map<String, dynamic>))
-          .toList(),
-      firstEpisode: json['firstEpisode'] as String,
-      voicedBy: json['voicedBy'] as String,
-      url: json['url'] as String,
-      wikiUrl: json['wikiUrl'] as String,
+      id: json['id'] as int?,
+      name: json['name'] as String?,
+      image: json['image'] as String?,
+      gender: json['gender'] as String?,
+      hairColor: json['hairColor'] as String?,
+      firstEpisode: json['firstEpisode'] as String?,
+      voicedBy: json['voicedBy'] as String?,
+      url: json['url'] as String?,
+      wikiUrl: json['wikiUrl'] as String?,
     );
 
 Map<String, dynamic> _$CharacterToJson(Character instance) => <String, dynamic>{
@@ -27,7 +24,6 @@ Map<String, dynamic> _$CharacterToJson(Character instance) => <String, dynamic>{
       'image': instance.image,
       'gender': instance.gender,
       'hairColor': instance.hairColor,
-      'relatives': instance.relatives,
       'firstEpisode': instance.firstEpisode,
       'voicedBy': instance.voicedBy,
       'url': instance.url,
