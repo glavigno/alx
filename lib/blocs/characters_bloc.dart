@@ -7,7 +7,7 @@ import 'characters_bloc_events.dart';
 import 'characters_bloc_states.dart';
 
 class CharactersBloc extends Bloc<CharactersBlocEvent, CharactersBlocState> {
-  final CharacterRepository repository;
+  final CharactersRepository repository;
   final scrollController = ScrollController();
   final List<Character> characters = [];
   int _currentPage = 1;

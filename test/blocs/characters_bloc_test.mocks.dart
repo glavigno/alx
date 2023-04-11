@@ -6,7 +6,8 @@
 import 'dart:async' as _i3;
 
 import 'package:alx_technical_test/data/models/character.dart' as _i4;
-import 'package:alx_technical_test/data/repositories/character_repository.dart' as _i2;
+import 'package:alx_technical_test/data/repositories/character_repository.dart'
+    as _i2;
 import 'package:mockito/mockito.dart' as _i1;
 
 // ignore_for_file: type=lint
@@ -20,11 +21,12 @@ import 'package:mockito/mockito.dart' as _i1;
 // ignore_for_file: camel_case_types
 // ignore_for_file: subtype_of_sealed_class
 
-/// A class which mocks [CharacterRepository].
+/// A class which mocks [CharactersRepository].
 ///
 /// See the documentation for Mockito's code generation for more information.
-class MockCharacterRepository extends _i1.Mock implements _i2.CharacterRepository {
-  MockCharacterRepository() {
+class MockCharactersRepository extends _i1.Mock
+    implements _i2.CharactersRepository {
+  MockCharactersRepository() {
     _i1.throwOnMissingStub(this);
   }
 

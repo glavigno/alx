@@ -11,10 +11,11 @@ import 'package:mockito/annotations.dart';
 
 import 'characters_bloc_test.mocks.dart';
 
-@GenerateMocks([CharacterRepository])
+
+@GenerateMocks([CharactersRepository])
 void main() {
   group('CharactersBloc', () {
-    late MockCharacterRepository mockRepository;
+    late MockCharactersRepository mockRepository;
     late CharactersBloc charactersBloc;
 
     setUpAll(() {
@@ -22,7 +23,7 @@ void main() {
     });
 
     setUp(() {
-      mockRepository = MockCharacterRepository();
+      mockRepository = MockCharactersRepository();
       charactersBloc = CharactersBloc(repository: mockRepository);
     });
 

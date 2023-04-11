@@ -6,8 +6,10 @@
 import 'dart:async' as _i5;
 
 import 'package:alx_technical_test/data/models/character.dart' as _i6;
-import 'package:alx_technical_test/data/repositories/local_data_source.dart' as _i7;
-import 'package:alx_technical_test/data/repositories/remote_data_source.dart' as _i4;
+import 'package:alx_technical_test/data/repositories/local_data_source.dart'
+    as _i7;
+import 'package:alx_technical_test/data/repositories/remote_data_source.dart'
+    as _i4;
 import 'package:dio/dio.dart' as _i2;
 import 'package:mockito/mockito.dart' as _i1;
 import 'package:shared_preferences/shared_preferences.dart' as _i3;
@@ -33,7 +35,8 @@ class _FakeDio_0 extends _i1.SmartFake implements _i2.Dio {
         );
 }
 
-class _FakeSharedPreferences_1 extends _i1.SmartFake implements _i3.SharedPreferences {
+class _FakeSharedPreferences_1 extends _i1.SmartFake
+    implements _i3.SharedPreferences {
   _FakeSharedPreferences_1(
     Object parent,
     Invocation parentInvocation,
@@ -68,7 +71,8 @@ class MockRemoteDataSource extends _i1.Mock implements _i4.RemoteDataSource {
         returnValueForMissingStub: null,
       );
   @override
-  _i5.Future<List<_i6.Character>> getCharacters(int? page) => (super.noSuchMethod(
+  _i5.Future<List<_i6.Character>> getCharacters(int? page) =>
+      (super.noSuchMethod(
         Invocation.method(
           #getCharacters,
           [page],

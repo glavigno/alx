@@ -2,11 +2,11 @@ import '../models/character.dart';
 import 'local_data_source.dart';
 import 'remote_data_source.dart';
 
-class CharacterRepository {
+class CharactersRepository {
   final RemoteDataSource _remoteDataSource;
   final LocalDataSource _localDataSource;
 
-  CharacterRepository(this._remoteDataSource, this._localDataSource);
+  CharactersRepository(this._remoteDataSource, this._localDataSource);
 
   Future<List<Character>> getData(int page) async {
     try {

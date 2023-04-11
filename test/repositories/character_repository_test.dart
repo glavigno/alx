@@ -13,12 +13,12 @@ void main() {
   group('CharacterRepository', () {
     late RemoteDataSource remoteDataSource;
     late LocalDataSource localDataSource;
-    late CharacterRepository repository;
+    late CharactersRepository repository;
 
     setUp(() {
       remoteDataSource = MockRemoteDataSource();
       localDataSource = MockLocalDataSource();
-      repository = CharacterRepository(remoteDataSource, localDataSource);
+      repository = CharactersRepository(remoteDataSource, localDataSource);
     });
 
     group('getData', () {

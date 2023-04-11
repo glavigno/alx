@@ -7,7 +7,7 @@ import 'data/repositories/character_repository.dart';
 import 'ui/pages/characters_page.dart';
 
 class App extends StatelessWidget {
-  final CharacterRepository repository;
+  final CharactersRepository repository;
 
   const App({Key? key, required this.repository}) : super(key: key);
 
